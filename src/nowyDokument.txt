@@ -1,1 +1,22 @@
-Pierwszy dokument
+//        double -> Double -> 2.55500000000000000  //<- taka jest reprezentacja liczby w systemie
+
+
+//        BigDecimal warotsc = new BigDecimal(BigInteger.ONE, 2);
+//Ctrl + P
+// deklaracja zmiennej zalecana przy systemach księgowych
+
+public static void roundNumber(final String number, int scale) {  //To najczęstszy sposób gdzie ja stosuję zaokrąglanie liczb
+        BigDecimal value = BigDecimal.valueOf(Double.parseDouble(number));
+        var roundHalfUp = value;
+        roundHalfUp = roundHalfUp.setScale(scale, RoundingMode.UP);
+
+        var roundHalfDown = value;
+        roundHalfDown = roundHalfDown.setScale(scale, RoundingMode.DOWN);
+
+        var roundHalfFloor = value;
+        roundHalfUp = roundHalfUp.setScale(scale, RoundingMode.FLOOR);
+
+        System.out.println("Round Half up: " + roundHalfUp);
+        System.out.println("Round Half down: " + roundHalfDown);
+        System.out.println("Round Half floor: " + roundHalfFloor);
+    }
