@@ -14,6 +14,14 @@ public class SimpleApp {
                 "przod", "Passat", 30000,
                 2.0, Kolor.NIEBIESKI);
 
+        modelPojazdu1.setMarka("Opel");
+        modelPojazdu1.setRocznik("2021");
+        modelPojazdu1.setNaped("przod");
+        modelPojazdu1.setNazwa("Corsa");
+        modelPojazdu1.setPrzebieg(14000);
+        modelPojazdu1.setPojemnoscSilnika(2.2);
+        modelPojazdu1.setKolor(Kolor.CZERWONY);
+
         System.out.println(modelPojazdu1.toString());
         System.out.println(modelPojazdu2);
         System.out.println(modelPojazdu3);

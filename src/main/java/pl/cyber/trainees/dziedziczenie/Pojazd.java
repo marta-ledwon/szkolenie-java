@@ -42,6 +42,9 @@ public class Pojazd {
         return naped;
     }
 
+
+    //Settery - metody, któych zadaniem jest ustawianie informacji z parametru metody do parametru klasy
+
     public void setMarka(final String marka){
         this.marka = marka;
 }
