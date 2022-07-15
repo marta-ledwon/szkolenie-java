@@ -3,10 +3,10 @@ package pl.cyber.trainees.dziedziczenie;
 //extends - słowo kluczowe stosowane przy dziedziczeniu klas
 public class Model extends Pojazd{
 
-    private final String nazwa;
-    private final Integer przebieg;
-    private final Double pojemnoscSilnika;
-    private final Kolor kolor;
+    private String nazwa;
+    private Integer przebieg;
+    private Double pojemnoscSilnika;
+    private Kolor kolor;
 
     public Model() {
         super();// to określa konstruktor, który wybierzemy z naszej klasy Pojazd
@@ -50,5 +50,17 @@ public class Model extends Pojazd{
     }
     public String getNazwa() {
         return nazwa;
+    }
+    public void setNazwa(final String nazwa){
+        this.nazwa = nazwa;
+    }
+    public void setPrzebieg(final Integer przebieg){
+        this.przebieg = przebieg;
+    }
+    public void setPojemnoscSilnika(final Double pojemnoscSilnika){
+        this.pojemnoscSilnika = pojemnoscSilnika;
+    }
+    public void setKolor(final Kolor kolor){
+        this.kolor = kolor;
     }
 }

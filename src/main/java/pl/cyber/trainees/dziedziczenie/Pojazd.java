@@ -5,9 +5,9 @@ package pl.cyber.trainees.dziedziczenie;
 
 public class Pojazd {
 
-    private final String marka;
-    private final String rocznik;
-    private final String naped;
+    private String marka;
+    private String rocznik;
+    private String naped;
 
     public Pojazd() {
         marka = "";
@@ -21,7 +21,8 @@ public class Pojazd {
         this.rocznik = rocznik;
         this.naped = naped;
     }
-    public String toString(){
+
+    public String toString() {
         return "Marka: " + this.marka
                 + " rocznik: " + this.rocznik
                 + " naped: " + this.naped;
@@ -29,14 +30,25 @@ public class Pojazd {
     //GETTERY - metody, których zadaniem jest pobieranie informacji z pól klasy
     // do dalszego przetwarzania
 
-    public String getMarka(){
+    public String getMarka() {
         return marka;
     }
-    public String getRocznik(){
+
+    public String getRocznik() {
         return rocznik;
     }
-    public String getNaped(){
+
+    public String getNaped() {
         return naped;
     }
 
+    public void setMarka(final String marka){
+        this.marka = marka;
+}
+    public void setRocznik(final String rocznik){
+        this.rocznik = rocznik;
+    }
+    public void setNaped(final String naped){
+        this.naped = naped;
+    }
 }
