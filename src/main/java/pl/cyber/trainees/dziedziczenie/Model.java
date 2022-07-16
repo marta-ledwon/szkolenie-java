@@ -1,5 +1,8 @@
 package pl.cyber.trainees.dziedziczenie;
 
+import java.util.ArrayList;
+import java.util.List;
+
 //extends - słowo kluczowe stosowane przy dziedziczeniu klas
 public class Model extends Pojazd{
 
@@ -62,5 +65,7 @@ public class Model extends Pojazd{
     }
     public void setKolor(final Kolor kolor){
         this.kolor = kolor;
+
+
     }
 }

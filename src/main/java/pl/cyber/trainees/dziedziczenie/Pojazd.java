@@ -3,6 +3,9 @@ package pl.cyber.trainees.dziedziczenie;
 
 // nowa klasa określająca markę pojazdu
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Pojazd {
 
     private String marka;
@@ -54,4 +57,7 @@ public class Pojazd {
     public void setNaped(final String naped){
         this.naped = naped;
     }
+
+
+
 }
