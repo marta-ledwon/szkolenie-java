@@ -2,9 +2,11 @@ package pl.cyber.trainees;
 
 import pl.cyber.trainees.dziedziczenie.Kolor;
 import pl.cyber.trainees.dziedziczenie.Model;
+import pl.cyber.trainees.kalkulator.Dodawanie;
 import pl.cyber.trainees.spotkania.Petle;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class SimpleApp {
@@ -24,7 +26,6 @@ public class SimpleApp {
         auto1.add("BMW");
         auto1.add("Ford");
         auto1.add("KIA");
-
 
 
         for (int i = 0; i < auto1.size(); i++) {
@@ -60,14 +61,33 @@ public class SimpleApp {
 
         */
 
+            Petle petle = new Petle();
+            petle.wyswietlLiczby();
+
+            List<Double> dodawanie = new ArrayList<>(Arrays.asList(
+                    1.123,
+                    2.234,
+                    3.345
+            ));
+            dodawanie.add(30.0);
+
+            petle.dodawanieElementowListy(dodawanie);
+
+
+
+            petle.wyswietlenieSet();
+
+
         }
 
-        Petle petle = new Petle();
-        petle.wyswietlLiczby();
 
     }
-
 }
+    //  Utworzyć nową metodę w której przekażemy jako parametr Listę Double. W ramach pętli foreach wykonamy dodawanie wartości z listy
+// następnie proszę wyświetlić wynik dodawania w postaci: Wynik dodawania listy: XZY
+// XZY - wynik dodawania
+
+
 
 
 
