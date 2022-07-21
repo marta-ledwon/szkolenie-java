@@ -15,7 +15,7 @@ public class OdczytDanych {
         return scan.nextLine();
 
     }
-    //throws (mów aplikacji pojawiajacy sie blad przeniesc do miejsca wykonania metodyFileNotFoundException
+    //throws (mówi aplikacji pojawiajacy sie blad przeniesc do miejsca wykonania metodyFileNotFoundException
     public Model daneOModeluPojazdu(File plikZew) throws FileNotFoundException {
        Model modelPojazdu = new Model();
        Scanner scan = new Scanner(plikZew);
