@@ -1,1 +1,1 @@
-Opel, 1999, tyl, Corsa, 120000, 2.0, CZERWONY
+Opel, 1999, tyl, Corsa, 120000, 2.0, czerwony

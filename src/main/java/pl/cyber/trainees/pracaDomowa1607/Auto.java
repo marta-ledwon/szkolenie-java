@@ -11,7 +11,6 @@ public class Auto {
         naped = "";
     }
 
-    //Alt+Fn+Insert = menu kontekstowe do generowania kodu CONSTRUCTOR
     public Auto(String marka, String rocznik, String naped) {
         this.marka = marka;
         this.rocznik = rocznik;

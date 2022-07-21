@@ -15,6 +15,11 @@ public class OdczytDanych {
         return scan.nextLine();
 
     }
+    public String daneZPliku(File plikZew) throws FileNotFoundException
+    {
+        Scanner scan = new Scanner(plikZew);
+        return scan.nextLine();
+    }
     //throws (mówi aplikacji pojawiajacy sie blad przeniesc do miejsca wykonania metodyFileNotFoundException
     public Model daneOModeluPojazdu(File plikZew) throws FileNotFoundException {
        Model modelPojazdu = new Model();
@@ -34,6 +39,7 @@ public class OdczytDanych {
         return modelPojazdu;
 
     }
+
 
 
 }
