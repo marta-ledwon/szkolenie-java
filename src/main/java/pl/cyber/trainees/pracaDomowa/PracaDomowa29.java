@@ -4,7 +4,7 @@ package pl.cyber.trainees.pracaDomowa;
 import java.util.Scanner;
 
 public class PracaDomowa29 {
-    public static void main(String[] args) {
+    public void rozwiazanie() {
 
         //1. Napisz metodę, która zwróci Twój aktualny wiek.
         //2. Napisz metodę, która zwróci Twoje imię,
