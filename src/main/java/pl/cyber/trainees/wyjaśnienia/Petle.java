@@ -5,7 +5,8 @@ public class Petle {
     public void uruchom() {
 
         //podzielnePrzez();
-        licznikRazyDwa();
+        //licznikRazyDwa();
+        licznikRazyDwaNowaWersja();
     }
     //1. metodę public void tylkoPodzielne() { przerobić na while.
     //zmienna o wartosci 1, wykorzystaj while.
@@ -44,6 +45,23 @@ public class Petle {
         }
         System.out.println("Ile razy petla sie wykonala? " + ileRazy2);
     }
+    // Inna wersja tego zadania!!!
+    // 2. Podnos licznik x2 do momentu aż liczba nie przekroczy 100
+    // oraz wyswietl ile razy pętla sięwykonała
+    private void licznikRazyDwaNowaWersja(){
+
+        int i = 1;
+        int ileRazy2 = 0;
+
+        while((i*2)<=100){
+            System.out.println(i*2);
+            i++;
+
+            ileRazy2 += 1;
+        }
+        System.out.println("Ile razy petla sie wykonala? " + ileRazy2);
+    }
+
 }
 
 
