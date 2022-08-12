@@ -1,14 +1,21 @@
 package pl.cyber.trainees;
 
-import pl.cyber.trainees.wyjaśnienia.Petle;
-import pl.cyber.trainees.wyjaśnienia.Tablice;
+import pl.cyber.trainees.wyjaśnienia.Wyjatki;
+
+import java.io.IOException;
 
 public class SimpleApp {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+//    Petle petle = new Petle();
+//    petle.uruchom();
 
-    //Petle petle = new Petle();
-    //petle.uruchom();
-        Tablice tablice = new Tablice();
-        tablice.uruchom();
+//    InstrukcjeWarunkowe instrukcjeWarunkowe = new InstrukcjeWarunkowe();
+//    instrukcjeWarunkowe.uruchom();
+
+//    Tablice tablice = new Tablice();
+//    tablice.uruchom();
+
+        Wyjatki wyjatki = new Wyjatki();
+        wyjatki.uruchom();
     }
 }
