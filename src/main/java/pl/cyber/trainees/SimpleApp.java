@@ -1,5 +1,6 @@
 package pl.cyber.trainees;
 
+import pl.cyber.trainees.wyjaśnienia.Obiekty;
 import pl.cyber.trainees.wyjaśnienia.Wyjatki;
 
 import java.io.IOException;
@@ -15,7 +16,9 @@ public class SimpleApp {
 //    Tablice tablice = new Tablice();
 //    tablice.uruchom();
 
-        Wyjatki wyjatki = new Wyjatki();
-        wyjatki.uruchom();
+        //Wyjatki wyjatki = new Wyjatki();
+        //wyjatki.uruchom();
+        Obiekty obiekty = new Obiekty();
+        obiekty.uruchom();
     }
 }
