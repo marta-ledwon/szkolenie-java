@@ -1,4 +1,4 @@
-package pl.cyber.trainees.wyjaśnienia;
+package pl.cyber.trainees.wyjasnienia;
 
 public class Basics {
 //Utworzyć metodę, której zadaniem jest wyświetlenie tekstu podanego jako parametr

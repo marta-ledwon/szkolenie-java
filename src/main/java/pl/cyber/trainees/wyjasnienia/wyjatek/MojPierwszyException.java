@@ -1,4 +1,4 @@
-package pl.cyber.trainees.wyjaśnienia.wyjatek;
+package pl.cyber.trainees.wyjasnienia.wyjatek;
 
 public class MojPierwszyException extends RuntimeException {
 

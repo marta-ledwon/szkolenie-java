@@ -1,8 +1,8 @@
-package pl.cyber.trainees.wyjaśnienia;
+package pl.cyber.trainees.wyjasnienia;
 
-import pl.cyber.trainees.wyjaśnienia.wyjatek.CheckedException;
-import pl.cyber.trainees.wyjaśnienia.wyjatek.MojPierwszyException;
-import pl.cyber.trainees.wyjaśnienia.wyjatek.UncheckedException;
+import pl.cyber.trainees.wyjasnienia.wyjatek.CheckedException;
+import pl.cyber.trainees.wyjasnienia.wyjatek.MojPierwszyException;
+import pl.cyber.trainees.wyjasnienia.wyjatek.UncheckedException;
 
 import java.io.File;
 import java.io.FileNotFoundException;

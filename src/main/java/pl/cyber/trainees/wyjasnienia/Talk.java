@@ -1,4 +1,4 @@
-package pl.cyber.trainees.wyjaśnienia;
+package pl.cyber.trainees.wyjasnienia;
 
 import java.math.BigDecimal;
 

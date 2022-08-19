@@ -1,4 +1,4 @@
-package pl.cyber.trainees.wyjaśnienia;
+package pl.cyber.trainees.wyjasnienia;
 
 
 //DTO -> Data Transfer Object
@@ -16,7 +16,6 @@ Cechy szczególne obiektów:
 np do konwersji objektu DTO bazy danych(Encji) na objekt do reprezentacji dla aplikacji Frontendowej
  */
 
-import pl.cyber.trainees.wyjaśnienia.wyjatek.UncheckedException;
 
 import java.util.List;
 
