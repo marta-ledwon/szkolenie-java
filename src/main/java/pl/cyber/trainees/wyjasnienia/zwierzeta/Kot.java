@@ -4,9 +4,6 @@ import pl.cyber.trainees.wyjasnienia.DateConverter;
 import java.text.ParseException;
 import java.time.LocalDate;
 
-/**
- * @author Mariusz Tański
- */
 
 public class Kot extends Zwierze {
     /*

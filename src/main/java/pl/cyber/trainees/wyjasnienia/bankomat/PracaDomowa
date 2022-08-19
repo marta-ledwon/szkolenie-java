@@ -9,8 +9,11 @@ Do wykonania prosta obsługa bankomatu.
 
 2) Należy wykonać kod aplikacji dla wszystkich opcji.
    Aplikacja powinna wyświetlać menu do momentu, gdy nie wybierzemy opcji 'przerwij operację', wtedy aplikacja powinna przestać działać.
-3) Początkowy stan konta bankomatu powinien wynosić 0, jednocześnie możemy wpłacać na stan konta wyłącznie następujące liczby (10, 20, 50, 100, 200, 500)
-4) Wypłacać gotówkę możemy wyłącznie następujące liczby (10, 20, 50, 100, 200, 500), jeśli wypłata gotówki ma przekroczyć minimalny stan konta powinien zostać wyświetlony
+3) Początkowy stan konta bankomatu powinien wynosić 0, jednocześnie możemy wpłacać na stan konta wyłącznie następujące liczby
+(10, 20, 50, 100, 200, 500)
+
+4) Wypłacać gotówkę możemy wyłącznie następujące liczby (10, 20, 50, 100, 200, 500), jeśli wypłata gotówki ma przekroczyć
+minimalny stan konta powinien zostać wyświetlony
    wyjątek StanKontaException z opisem "Niewystarczająca ilość środków w bankomacie"
 5) Sprawdzenie stanu konta powinno zwrócić ilość gotówki zdeponowanej w bankomacie.
 6) Po wykonaniu opcji a - c powinna aplikacja wrócić do menu.

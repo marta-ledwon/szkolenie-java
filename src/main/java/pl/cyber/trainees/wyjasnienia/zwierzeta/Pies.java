@@ -1,15 +1,9 @@
 package pl.cyber.trainees.wyjasnienia.zwierzeta;
 
-import pl.cyber.trainees.dziedziczenie.Kolor;
-import pl.cyber.trainees.dziedziczenie.Model;
 import pl.cyber.trainees.wyjasnienia.DateConverter;
 
 import java.text.ParseException;
 import java.time.LocalDate;
-
-/**
- * @author Mariusz Tański
- */
 
 public class Pies extends Zwierze {
     private final String imiePsa;
