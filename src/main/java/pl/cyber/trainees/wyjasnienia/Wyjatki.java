@@ -105,7 +105,7 @@ public class Wyjatki {
 
 
         try {
-            throw new IllegalArgumentException("test");
+            throw new IllegalArgumentException("src/main/test");
         }
         catch (IllegalArgumentException e) {
             System.out.println("IllegalArgumentException thrown");

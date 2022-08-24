@@ -2,20 +2,21 @@ package pl.cyber.trainees.wyjasnienia;
 
 import pl.cyber.trainees.wyjasnienia.wyjatek.MojPierwszyException;
 import pl.cyber.trainees.wyjasnienia.zwierzeta.Kot;
+import pl.cyber.trainees.wyjasnienia.zwierzeta.Papuga;
 import pl.cyber.trainees.wyjasnienia.zwierzeta.Pies;
+import pl.cyber.trainees.wyjasnienia.zwierzeta.Waz;
 import pl.cyber.trainees.wyjasnienia.zwierzeta.Zwierze;
 import pl.cyber.trainees.wyjasnienia.zwierzeta.ZwierzeEnum;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.text.ParseException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- * @author Mariusz Tański
- */
+
 
 public class Obiekty {
 
@@ -144,27 +145,27 @@ public class Obiekty {
     Dodatkowo wywołać metodę (skorzystamy z przysłaniania metod) dajGlos()
    */
 
-    private void zadanie4() {
-
-        List<Zwierze> zwierze = new ArrayList<>();
-        zwierze.add(new Kot(200.0 , true, "Felix", LocalDate.of(2020, 7, 2), 3.0, "Mariusz"));
-        zwierze.add(new Kot(200.0 , false, "Felix2", LocalDate.of(2020, 8, 2), 3.5, "Mariusz"));
-        zwierze.add(new Kot(250.0 , true, "Felix3", LocalDate.of(2020, 9, 2), 4.0, "Mariusz"));
-        zwierze.add(new Pies(250.0 , true, "Goldi", LocalDate.of(2020, 9, 2), 14.0, "Mariusz"));
-
-        for (Zwierze zw : zwierze) {
-            if(zw instanceof Kot) {
-                System.out.println(((Kot)zw).przedstawSie());
-//        System.out.println((zw).dajGlos());
-            } else if (zw instanceof Pies) {
-                System.out.println(((Pies)zw).przedstawSie());
-//        System.out.println((zw).dajGlos());
-            }
-            System.out.println((zw).dajGlos());
-            System.out.println(zw.dajGlos2());
-        }
-    }
-
+//    private void zadanie4() {
+//
+//        List<Zwierze> zwierze = new ArrayList<>();
+//        zwierze.add(new Kot(200.0 , true, "Felix", LocalDate.of(2020, 7, 2), 3.0, "Mariusz"));
+//        zwierze.add(new Kot(200.0 , false, "Felix2", LocalDate.of(2020, 8, 2), 3.5, "Mariusz"));
+//        zwierze.add(new Kot(250.0 , true, "Felix3", LocalDate.of(2020, 9, 2), 4.0, "Mariusz"));
+//        zwierze.add(new Pies(250.0 , true, "Goldi", LocalDate.of(2020, 9, 2), 14.0, "Mariusz"));
+//
+//        for (Zwierze zw : zwierze) {
+//            if(zw instanceof Kot) {
+//                System.out.println(((Kot)zw).przedstawSie());
+////        System.out.println((zw).dajGlos());
+//            } else if (zw instanceof Pies) {
+//                System.out.println(((Pies)zw).przedstawSie());
+////        System.out.println((zw).dajGlos());
+//            }
+//            System.out.println((zw).dajGlos());
+//            System.out.println(zw.dajGlos2());
+//        }
+//    }
+//
 
   /*
     zadanie nr 5
@@ -177,47 +178,53 @@ public class Obiekty {
     a następnie niech każdy z nich się przedstawi.
     Dodatkowo wywołać metodę (skorzystamy z przysłaniania metod) dajGlos()
    */
-
-    private void zadanie5() {
-        File file = new File("src/main/resources/zwierzeta.txt");
-
-        List<Zwierze> zwierzeList = pobierzInformacjeZPliku(file);
-
-        for (Zwierze zw : zwierzeList) {
-            if(zw instanceof Pies) {
-                System.out.println(((Pies)zw).przedstawSie());
-            } else if(zw instanceof Kot) {
-                System.out.println(((Kot)zw).przedstawSie());
-            }
-
-            System.out.println(zw.dajGlos());
-        }
-    }
-
-    private List<Zwierze> pobierzInformacjeZPliku(File file) {
-        Scanner scan = null;
-        try {
-            scan = new Scanner(file);
-        } catch (FileNotFoundException e) {
-            throw new MojPierwszyException("Komunikat naszego błędu!");
-        }
-
-        List<Zwierze> zwierzeta = new ArrayList<>();
-
-        while (scan.hasNext()) {
-            String rowInFile = scan.nextLine();  //PIES,Goldi,2020/05/10,14,Mariusz,250,true
-            String[] tablicaPliku = rowInFile.split(",");
-            if(ZwierzeEnum.PIES.name().equals(tablicaPliku[0])) {
-                Pies pies = new Pies();
-                zwierzeta.add(pies.convertFromFile(rowInFile));
-            } else if(ZwierzeEnum.KOT.name().equals(tablicaPliku[0])) {
-                Kot kot = new Kot();
-                zwierzeta.add(kot.convertFromFile(rowInFile));
-            }
-        }
-
-        return zwierzeta;
-    }
+//
+//    private void zadanie5() {
+//        File file = new File("src/main/resources/zwierzeta.txt");
+//
+//        List<Zwierze> zwierzeList = pobierzInformacjeZPliku(file);
+//
+//        for (Zwierze zw : zwierzeList) {
+//            if(zw instanceof Pies) {
+//                System.out.println(((Pies)zw).przedstawSie());
+//            } else if(zw instanceof Kot) {
+//                System.out.println(((Kot)zw).przedstawSie());
+//            }
+//
+//            System.out.println(zw.dajGlos());
+//        }
+//    }
+//
+//    private List<Zwierze> pobierzInformacjeZPliku(File file) {
+//        Scanner scan = null;
+//        try {
+//            scan = new Scanner(file);
+//        } catch (FileNotFoundException e) {
+//            throw new MojPierwszyException("Komunikat naszego błędu!");
+//        }
+//
+//        List<Zwierze> zwierzeta = new ArrayList<>();
+//
+//        while (scan.hasNext()) {
+//            String rowInFile = scan.nextLine();  //PIES,Goldi,2020/05/10,14,Mariusz,250,true
+//            String[] tablicaPliku = rowInFile.split(",");
+//            if(ZwierzeEnum.PIES.name().equals(tablicaPliku[0])) {
+//                Pies pies = new Pies();
+//                zwierzeta.add(pies.convertFromFile(rowInFile));
+//            } else if(ZwierzeEnum.KOT.name().equals(tablicaPliku[0])) {
+//                Kot kot = new Kot();
+//                zwierzeta.add(kot.convertFromFile(rowInFile));
+//            } else if(ZwierzeEnum.WAZ.name().equals(tablicaPliku[0])) {
+//                Waz waz = new Waz();
+//                zwierzeta.add(waz.convertFromFile(rowInFile));
+//            } else if(ZwierzeEnum.PAPUGA.name().equals(tablicaPliku[0])) {
+//                Papuga papuga = new Papuga();
+//                zwierzeta.add(papuga.convertFromFile(rowInFile));
+//            }
+//        }
+//
+//        return zwierzeta;
+   // }
    /*
    Firma
       Osoba
@@ -284,16 +291,37 @@ public class Obiekty {
    */
 
 
-    //zadanie 6
+    // zadanie 6
     // Utorzenie 2 innych typów zwierząt oraz ich przedstawienie
     // proponuję nowy plik w katalogu resources
+//    private void zadanie6() {
+//        File file = new File("src/main/resources/zwierzeta.txt");
+//
+//        List<Zwierze> zwierzeList = pobierzInformacjeZPliku(file);
+//
+//        for (Zwierze zw : zwierzeList) {
+//            if(zw instanceof Pies) {
+//                System.out.println(((Pies)zw).przedstawSie());
+//            } else if(zw instanceof Kot) {
+//                System.out.println(((Kot)zw).przedstawSie());
+//            } else if(zw instanceof Waz) {
+//                System.out.println(((Waz)zw).przedstawSie());
+//            } else if(zw instanceof Papuga) {
+//                System.out.println(((Papuga)zw).przedstawSie());
+//            }
+//
+//            System.out.println(zw.dajGlos());
+//        }
+//    }
+
     public void uruchom() {
 
 //    wyswietlTalkDTO();
 //    zadanie1();
 //    zadanie2();
 //    zadanie4();
-        zadanie5();
+//    zadanie5();
+//    zadanie6();
 
 //    DateConverter dateConverter = new DateConverter();
 //
