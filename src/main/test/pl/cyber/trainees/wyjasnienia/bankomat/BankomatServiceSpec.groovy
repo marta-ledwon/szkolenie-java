@@ -7,6 +7,7 @@ import spock.lang.Specification
 class BankomatServiceSpec extends Specification {
 
     private BankomatService underTest = new BankomatService()
+    private Scanner scanner = Mock()
 
     def "Sprawdzam wybraną pozycję nr 0 tj. Przerwij operacje"() {
         when:
@@ -17,6 +18,7 @@ class BankomatServiceSpec extends Specification {
         noExceptionThrown()
 //        result == false
         !result
+
     }
 
 }
